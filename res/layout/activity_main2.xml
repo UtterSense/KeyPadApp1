@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+
+        tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/textLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="#555555"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="145dp"
+            android:textSize="10sp"
+            android:text="@string/text_scroll" >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#555555"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="145dp"
+            android:textSize="10sp"
+            android:text="@string/text_scroll" >
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/labelLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLinLay">
+            <TextView
+                android:id="@+id/label_text1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="@string/text_keypad" >
+            </TextView>
+            <TextView
+                android:id="@+id/label_text2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="@string/text_ds3231" >
+            </TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/clearBtnLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelLinLay">
+
+        <Button
+            android:id="@+id/clearBtn1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="#4a4a4a"
+            android:onClick="onClick"
+            android:text= "@string/text_clear" />
+        <Button
+            android:id="@+id/clearBtn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="#4a4a4a"
+            android:onClick="onClick"
+            android:text= "@string/text_clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/initBtnLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearBtnLinLay">
+
+            <Button
+                android:id="@+id/initBtn1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_init_keypad" />
+            <Button
+                android:id="@+id/initBtn2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_init_ds3231" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toggleBtnLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/initBtnLinLay">
+
+            <Button
+                android:id="@+id/toggleBtn1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_toggle_led" />
+            <Button
+                android:id="@+id/timerIntBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_set_timer_int" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/switchOnLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toggleBtnLinLay">
+
+            <Button
+                android:id="@+id/switchOnBtn1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_led_on" />
+            <Button
+                android:id="@+id/startBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_timer_start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/switchOffLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switchOnLinLay">
+
+            <Button
+                android:id="@+id/switchOffBtn1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_led_off" />
+            <Button
+                android:id="@+id/stopBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_timer_stop" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/closeLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switchOffLinLay">
+
+            <Button
+                android:id="@+id/closeBtn1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_close_keypad" />
+            <Button
+                android:id="@+id/closeBtn2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:onClick="onClick"
+                android:text= "@string/text_close_ds3231" />
+        </LinearLayout>
+
+
+    </RelativeLayout>

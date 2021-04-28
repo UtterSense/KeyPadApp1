@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/textLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:background="#555555">
+            <TextView
+                android:id="@+id/tv_text1"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="#555555"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:layout_height="145dp"
+                android:textSize="10sp"
+                android:text="@string/text_scroll" >
+            </TextView>
+        </ScrollView>
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:background="#555555">
+                <TextView
+                    android:id="@+id/tv_text2"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#555555"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_height="145dp"
+                    android:textSize="10sp"
+                    android:text="@string/text_scroll" >
+                </TextView>
+            </ScrollView>
+         </LinearLayout>
+
+
+    </RelativeLayout>

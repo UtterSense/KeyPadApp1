@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KeyPadApp1</string>
+    <string name="text_scroll">Scroll text here!</string>
+    <string name="text_keypad">KEYPAD</string>
+    <string name="text_ds3231">DS3231</string>
+    <string name="text_clear">Clear Text</string>
+    <string name="text_init_keypad">Initialise Keypad Device</string>
+    <string name="text_init_ds3231">Initialise DS3231 Device</string>
+    <string name="text_toggle_led">Toggle LED</string>
+    <string name="text_set_timer_int">Set Timer Interval (s)</string>
+    <string name="text_led_on">Switch ON LED (s)</string>
+    <string name="text_led_off">Switch OFF LED (s)</string>
+    <string name="text_timer_start">Start Timer</string>
+    <string name="text_timer_stop">Stop Timer</string>
+    <string name="text_close_keypad">Close Keypad</string>
+    <string name="text_close_ds3231">Close DS3231</string>
+</resources>
