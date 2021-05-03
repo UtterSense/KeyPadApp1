@@ -1,12 +1,13 @@
 package net.uttersense.keypadapp1;
 
-import androidx.appcompat.app.AlertDialog;
+//import androidx.appcompat.app.AlertDialog;
 import net.uttersense.libkeypad.KeypadManager;
 import net.uttersense.libkeypad.IKeypadManagerListener;
 import net.uttersense.libds3231.DS3231Manager;
 import net.uttersense.libds3231.IDS3231Listener;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
