@@ -29,32 +29,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := libkeypad libds3231
 include $(BUILD_PACKAGE)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-#---------------------------------------------------------------------
-# Build from Prebuilt JAR file
-#---------------------------------------------------------------------
-include $(CLEAR_VARS)
 
-LOCAL_MODULE := libkeypad
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SDK_VERSION := current
-LOCAL_SRC_FILES := libs/libkeypad.jar
-LOCAL_UNINSTALLABLE_MODULE := true
-
-include $(BUILD_PREBUILT)
-
-
-#---------------------------------------------------------------------
-# Build from Prebuilt JAR file
-#---------------------------------------------------------------------
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := libds3231
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SDK_VERSION := current
-LOCAL_SRC_FILES := libs/libds3231.jar
-LOCAL_UNINSTALLABLE_MODULE := true
-
-include $(BUILD_PREBUILT)
 
 
 
